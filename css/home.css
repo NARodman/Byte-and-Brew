@@ -26,3 +26,41 @@
     font-size: 20px;
     text-shadow: 0 0 5px #00aeef, 0 0 10px #00aeef;
 }
+
+/* Login Icon */
+.login-link i {
+    margin-right: 5px;
+}
+
+/* Mobile Toggle Button */
+.navbar-toggler {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+    width:  30px;
+    height: 3px;
+    display: block;
+    margin: 6px auto;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover .navbar-toggler-icon {
+    background-color: #00aeef;
+    box-shadow: 0 0 5px #00aeef, 0 0 10px #00aeef;
+}
+
+/* Responsive - Center Navbar Items on Mobile */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+}
