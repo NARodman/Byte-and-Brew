@@ -4,9 +4,9 @@
     padding: 15px 0;
 }
 
-.navbar-brand .logo{
-   width: 140px;
+h1.navbar-brand.logo{
    color: white;
+   font-family: "Bebas Neue", Roboto;
 }
 
 .navbar-toggler {
