@@ -19,14 +19,32 @@
         <link rel="stylesheet" href="../css/global.css">
         <link rel="stylesheet" href="../css/home.css">
 
-        <!--Font Awesome-->
+        <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!--Navigation Bar-->
+        <!-- Navigation Bar-->
         <nav clas="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a href="#" class="navbar-brand">BYTE & BREW</a>
+
+                <!-- Mobile Toggle Button -->
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+
+                 <!--Navigation Links -->
+                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="../html/index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="../html/menu.html" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="../html/reservations.html" class="nav-link">Reservations</a></li>
+                        <li class="nav-item"><a href="../html/contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item">
+                            <a href="../html/login.html" class="nav-link login-link"><i class="fas fa-user"></i>Login</a>
+                        </li>
+                    </ul>
+                 </div>
             </div>
         </nav>
     </body>
