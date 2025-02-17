@@ -1,0 +1,9 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #121212;
+    padding: 15px 0;
+}
+
+.navbar-brand .logo{
+   width: 140px;
+}
