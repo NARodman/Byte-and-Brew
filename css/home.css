@@ -1,7 +1,7 @@
 /* General Navbar Styling */
 .navbar {
     background-color: #232323;
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
 .navbar-brand {
@@ -10,21 +10,32 @@
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: white;
+    text-shadow: 0 0 5px #00AEEF, 0 0 10px #00AEEF;
 }
 
 /* Navbar Links */
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    padding: 0;
+}
 .navbar-nav .nav-link {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 15px;
     transition: all 0.3s ease-in-out;
     margin: 0 10px;
+    text-decoration: none;
 }
 
 /* Hover Effect - Neon Glow */
 .navbar-nav .nav-link:hover {
-    color: #00AEEF;
-    font-size: 20px; /* Text grows slightly on hover */
+    color: white; /* Text grows slightly on hover */
     text-shadow: 0 0 5px #00AEEF, 0 0 10px #00AEEF;
 }
 
@@ -33,26 +44,22 @@
     margin-right: 5px;
 }
 
+.navbar-nav .nav-item {
+    list-style: none;
+}
+
 /* Mobile Toggle Icon */
 .navbar-toggler {
     border: none;
-    outline: none;
     background: none;
-}
-
-.navbar-toggler-icon {
-    background-color: white;
-    width: 30px;
-    height: 3px;
-    display: block;
-    margin: 6px auto;
-    position: relative;
+    font-size: 24px;
+    color: white;
     transition: all 0.3s ease-in-out;
 }
 
 /* Neon Animation on Hover */
-.navbar-toggler:hover .navbar-toggler-icon {
-    background-color: #00AEEF;
+.navbar-toggler:hover {
+    background-color: white;
     box-shadow: 0 0 5px #00AEEF, 0 0 10px #00AEEF;
 }
 
