@@ -40,9 +40,10 @@
 }
 
 /* Login Icon */
-.login-link i {
+.login-link img {
     margin-right: 5px;
 }
+
 
 .navbar-nav .nav-item {
     list-style: none;
