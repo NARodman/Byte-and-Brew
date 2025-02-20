@@ -34,7 +34,7 @@
 }
 
 /* Hover Effect - Neon Glow */
-.navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover{
     color: white; /* Text grows slightly on hover */
     text-shadow: 0 0 5px #00AEEF, 0 0 10px #00AEEF;
 }
@@ -42,6 +42,7 @@
 /* Login Icon */
 .login-link img {
     margin-right: 5px;
+
 }
 
 
