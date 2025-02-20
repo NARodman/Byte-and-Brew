@@ -2,6 +2,7 @@
 .navbar {
     background-color: #232323;
     padding: 10px 20px;
+    height: 55px;
 }
 
 .navbar-brand {
@@ -44,7 +45,6 @@
     margin-right: 5px;
 
 }
-
 
 .navbar-nav .nav-item {
     list-style: none;
