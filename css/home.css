@@ -127,8 +127,24 @@
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
     max-width: 600px;
-}   
+} 
+
+/* Buttons */
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 12px 12px;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
