@@ -86,7 +86,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 
 /* Hero Slider */
@@ -113,7 +113,7 @@
 /* Hero Content */
 .hero-content {
     position: absolute;
-    text-align: left;
+    text-align: center;
     color: white;
     z-index: 2;
 }
