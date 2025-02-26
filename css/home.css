@@ -108,3 +108,11 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* Hero Content */
+.hero-content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
