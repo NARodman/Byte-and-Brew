@@ -10,4 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     setInterval(moveSlides, 5000);
+
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
+            });
+        });
+    });
+
+    // Lazy Load Images for Better Performance
+    document.querySelectorAll("img").forEach(img => {
+        img.setAttribute("loading", "lazy");
+    });
 });
