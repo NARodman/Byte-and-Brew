@@ -21,3 +21,12 @@
     font-size: 24px;
     color: #bbb;
 }
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #ff007f;
+}
