@@ -18,7 +18,8 @@
 }
 
 .reservation-subtitle {
-    font-size: 24px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
     color: #bbb;
 }
 
@@ -30,3 +31,25 @@ form {
     border-radius: 12px;
     box-shadow: 0 0 15px #ff007f;
 }
+
+input, select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+.book-btn {
+    width: 100%;
+    background: #ff007f;
+    color: white;
+    font-size: 22px; 
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #ff007f, 0px 0px 20px #ff007f;
+    transition: 0.3s;
+
+}
+
