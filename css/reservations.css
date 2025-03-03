@@ -1,3 +1,9 @@
+* {
+    background: #232323;
+}
+
+
+
 .reservation-section {
     text-align: center;
     padding: 100px 20px;
@@ -53,3 +59,7 @@ input, select {
 
 }
 
+.book-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #ff007f, 0px 0px 30px #ff007f;
+}
