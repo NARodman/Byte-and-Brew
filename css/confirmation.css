@@ -1,6 +1,7 @@
 body {
     background: url('../images/Reservations.png')no-repeat center center/cover;
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,9 +25,46 @@ body {
     text-align: center;
     width: 350px;
     box-shadow: 0px 0px 15px rgba(255, 0, 127, 0.2);
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .confirmation-box i {
     font-size: 40px;
-    color: #ff007f;
+    color: #8000ff;
 }
+
+.reservation-details {
+    background: #232323;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #232323;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #8000ff;
+    font-family: 'Bebas Neue', sans-serif;
+
+}
+
+
