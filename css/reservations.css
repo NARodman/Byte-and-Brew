@@ -12,14 +12,16 @@ body {
     overflow: hidden;
     margin: auto;
     margin-top: 12vh;
-    box-shadow: 0px 0px 30px rgba(255, 0, 127, 0.4);
-    border: 2px solid rgba(255, 0, 127, 0.7);
+    box-shadow: 0px 0px 30px #00aeef;
+    border: 2px solid #00aeef;
 
 }
 
 .image-side {
     flex: 1;
-    background: url('../images/Reservations.png')center/cover no-repeat;
+    background: url('../images/Reservations.png') center/cover no-repeat;
+    position: relative;
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
 }
 
 .form-side {
@@ -38,6 +40,12 @@ body {
     text-transform: uppercase;
     text-align: left;
     width: 100%;
+    background: linear-gradient(to left, #00aeef, #8000ff, #ff007f);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 15px rgba(0, 174, 239, 0.9);
+    animation: pulseGlow 2s infinite alternate;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
 }
 
 form {
@@ -76,4 +84,13 @@ input::placeholder {
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.3s;
+    border-color: #00aeef;
+    box-shadow: #00aeef 0px 0px 12px, #00aeef 0px 0px 2px;
+}
+
+.book-btn:hover {
+    background: #ff007f;
+    color: white;
+    border-color: #ff007f;
+    box-shadow: #ff007f 0px 0px 12px, #ff007f 0px 0px 2px;
 }
