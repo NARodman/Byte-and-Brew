@@ -17,4 +17,31 @@ document.addEventListener("DOMContentLoaded", () => {
             showAlert("Please fill in all required fields.", "error");
             return;
         }
-}
+
+        //Store reservation data in local storage
+        const reservationData = {
+            name, 
+            email, 
+            date, 
+            time, 
+            guests, 
+        };
+        localStorage.setItem("reservationData", JSON.stringify(reservationData));
+
+        //transition to confirmation page 
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+            window.location.href = "confirmation.html";
+        }, 800);
+    });
+
+        //Alert function
+
+        function showAlert(message, type) {
+            const alertBox = document.createElement("div");
+            alertBox.className = `alert ${type}`;
+            alertBox.innerText = message;
+            document.body.appendChild(alertBox);
+            setTimeout(() => alertBox.remove(), 3000);
+        }
+});
