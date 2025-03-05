@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
         const date = document.getElementById("date").value;
         const time = document.getElementById("time").value;
         const guests = document.getElementById("guests").value;
-    
 
         // Validate required fields
         if (!name || !email || !date || !time || !guests) {
