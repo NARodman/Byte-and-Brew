@@ -22,7 +22,43 @@
     <script src="https://kit.fontawesome.com/8254976ac4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="login-container">
+        <div class="login-card animate">
+            <img src="../images/icons8-user-96.png" alt="user icon" class="user-icon">
+            <h2>Login to Byte & Brew</h2>
+            <p>Enter your cyberpunk credentials</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-lock"></i></span>
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">Login <i class="fas fa-sign-in-alt"></i></button>
+
+                <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+
+                <div class="social-login">
+                    <button class="social-btn google"><i class="fab fa-google"></i></button>
+                    <button class="social-btn facebook"><i class="fab fa-facebook"></i></button>
+                    <button class="social-btn twitter"><i class="fab fa-twitter"></i></button>
+                </div>
+            </form>
+
+            <button onclick="goHome()" class="home-btn">← Back to Homepage</button>
+            
+        </div>
+    </div>
 
 
 
