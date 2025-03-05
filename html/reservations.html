@@ -58,24 +58,25 @@
         <div class="form-side">
             <h1 class="reservation-title">RESERVE</h1>
 
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-
-            <div class="form-row">
-                <select required>
-                    <option value="" disabled selected>Guests</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5+">5+</option>
-                </select>
-                <input type="tel" placeholder="Phone" required>
-                </div>
-
+            <form id="reservationForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+            
                 <div class="form-row">
-                    <input type="date" required>
-                    <select required>
+                    <select id="guests" required>
+                        <option value="" disabled selected>Guests</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+                    <input type="tel" id="phone" placeholder="Phone" required>
+                </div>
+            
+                <div class="form-row">
+                    <input type="date" id="date" required>
+                    <select id="time" required>
                         <option value="">Time</option>
                         <option>8:00 AM</option>
                         <option>8:30 AM</option>
@@ -96,10 +97,10 @@
                         <option>4:00 PM</option>
                     </select>
                 </div>
-
-
+            
                 <button type="submit" class="book-btn">Book Now</button>
             </form>
+            
 
         </div>
 

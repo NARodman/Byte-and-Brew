@@ -156,3 +156,44 @@ input::placeholder{
     80% { opacity: 1; }
     100% { opacity: 0; transform: translateY(-10px); }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-card {
+        flex-direction: column; /* Stack image and form on top of each other */
+        height: auto;
+        width: 90%; /* Make it fit smaller screens */
+    }
+
+    .image-side {
+        height: 250px; /* Adjust image height */
+        flex: none;
+        mask-image: none; /* Remove gradient masking */
+    }
+
+    .form-side {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .reservation-title {
+        font-size: 50px; /* Reduce title size on mobile */
+    }
+
+    .form-row {
+        flex-direction: column; /* Stack inputs on mobile */
+        gap: 5px;
+    }
+
+    .book-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .reservation-policy {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
