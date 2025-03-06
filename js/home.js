@@ -37,3 +37,4 @@ document.addEventListener('DOMContentLoaded', function() {
         img.setAttribute("loading", "lazy");
     });
 });
+
