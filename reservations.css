@@ -19,7 +19,7 @@ body {
 
 .image-side {
     flex: 1;
-    background: url('../images/Reservations.png') center/cover no-repeat;
+    background: url('/images/Reservations.png') center/cover no-repeat;
     position: relative;
     mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0));
 }
