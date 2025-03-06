@@ -257,24 +257,28 @@
     width: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), 0%, #232323 100%);
     color: #ffffff;
-    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 50px 10px;
 
 }
 
 
 .service-box {
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 20px;
+    margin: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
-    width: 350px;
+    width: 100%;
+    max-width: 350px; /* Prevents boxes from becoming too wide */
 }
 
 
@@ -325,6 +329,33 @@
     left: 100%;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    #services {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .service-box {
+        width: 95%; 
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #services {
+        flex-direction: column; 
+        justify-content: center;
+        
+    }
+
+    .service-box {
+        width: 100%; 
+        max-width: 475px;
+        margin: 30px;
+        
+    }
+}
 
 
 
