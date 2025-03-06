@@ -212,6 +212,8 @@
     transform: scale(1.05);
 }
 
+
+
 /* Responsive - Hero Section */
 
 /* Responsive Adjustments */
@@ -251,38 +253,78 @@
 
 
 #services {
-    background: #232323;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), 0%, #232323 100%);
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    overflow: hidden;
+
 }
+
 
 .service-box {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
     padding: 20px;
-    margin: 15px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    width: 350px;
 }
+
 
 .service-box:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 4px 15px #00AEEF;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px rgba(0, 174, 239, 0.7);
+    
 }
+
 
 .service-icon {
-    width: 50px;
-    margin-bottom: 10px;
-    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.05));
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease-in-out;
 }
 
-h3 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 10px;
+.service-box:hover .service-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.service-box h3 {
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    background: linear-gradient(to left, #00aeef, #8000ff, #ff007f);
+    background-clip: text;
+    color: transparent;
 }
 
 .service-box p {
     font-family: 'Poppins', sans-serif;
 }
+
+.service-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 174, 239, 0.3), transparent);
+    transition: left 0.5s ease-in-out;
+}
+
+.service-box:hover::before {
+    left: 100%;
+}
+
+
+
+
