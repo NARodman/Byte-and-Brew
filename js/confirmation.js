@@ -101,7 +101,7 @@ END:VCALENDAR`;
     const backToHomepageBtn = document.querySelector(".back-to-homepage");
     if (backToHomepageBtn) {
         backToHomepageBtn.addEventListener("click", () => {
-            window.location.href = "../html/index.html"; // Redirect to the homepage (adjust URL as needed)
+            window.location.href = "/index.html"; // Redirect to the homepage (adjust URL as needed)
         });
     }
 });
