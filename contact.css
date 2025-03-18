@@ -46,3 +46,19 @@ body {
     animation: pulseGlow 2s infinite alternate;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
 }
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 16px;
+}
