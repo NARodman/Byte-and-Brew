@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+.contact-card {
+    width: 100%;
+    max-width: 1100px;
+    height: 70vh;
+    background: #232323;
+    border-radius: 25px;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 12vh;
+    box-shadow: 0px 0px 30px #00aeef;
+    border: 2px solid #00aeef;
+}
