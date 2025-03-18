@@ -1,0 +1,84 @@
+body {
+    background: url('/images/ContactBG.png') no-repeat center center/cover;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: center;
+    transition: background-position 0.2s ease-out;
+}
+
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.confirmation-box {
+    background: #232323;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0px 0px 15px rgba(255, 0, 127, 0.2);
+    font-family: 'Poppins', sans-serif;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.confirmation-box i {
+    font-size: 50px;
+    color: #8000ff;
+    margin-bottom: 10px;
+    animation: bounceIn 0.6s ease-in-out;
+}
+
+.confirmation-box h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.confirmation-box p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.back-to-homepage {
+    background-color: #8000ff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-homepage:hover {
+    background-color: #7a00d7;
+}
+
+/* Bounce Animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
