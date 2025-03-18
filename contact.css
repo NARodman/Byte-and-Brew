@@ -30,14 +30,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px;
+    padding: 20px;
 }
 
 .contact-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 80px;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     width: 100%;
     background: linear-gradient(to left, #00aeef, #8000ff, #ff007f);
     background-clip: text;
@@ -54,8 +54,8 @@ form {
 
 input, textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 5px;
+    margin: 5px 0;
     background: transparent;
     border: none;
     border-bottom: 2px solid white;
@@ -83,10 +83,80 @@ input::placeholder, textarea::placeholder {
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.3s;
+    border-color: #00aeef;
+    box-shadow: #00aeef 0px 0px 12px, #00aeef 0px 0px 2px;
 }
 
 .send-btn:hover {
-    background: #00aeef;
+    background: #ff007f;
     color: white;
-    box-shadow: 0px 0px 15px rgba(0, 174, 239, 0.9);
+    border-color: #ff007f;
+    box-shadow: #ff007f 0px 0px 12px, #ff007f 0px 0px 2px;
 }
+
+.contact-info {
+    background: #232323;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: right;
+    width: 89%;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    box-shadow: 0px 0px 30px #00aeef;
+    border: 2px solid #00aeef;
+}
+
+.contact-info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 2px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    
+}
+
+.contact-info i {
+    color: #ff007f;
+    margin: 30px;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-card {
+        flex-direction: column; /* Stack image and form on top of each other */
+        height: auto;
+        width: 90%; /* Make it fit smaller screens */
+    }
+
+    .image-side {
+        height: 250px; /* Adjust image height */
+        flex: none;
+        mask-image: none; /* Remove gradient masking */
+    }
+
+    .form-side {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-title {
+        font-size: 50px; /* Reduce title size on mobile */
+    }
+
+    .send-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
