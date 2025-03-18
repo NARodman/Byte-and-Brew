@@ -127,10 +127,10 @@ input::placeholder, textarea::placeholder {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .reservation-card {
-        flex-direction: column; /* Stack image and form on top of each other */
+    .contact-card {
+        flex-direction: column; /* Stack image and form vertically */
         height: auto;
-        width: 90%; /* Make it fit smaller screens */
+        width: 90%;
     }
 
     .image-side {
@@ -145,7 +145,11 @@ input::placeholder, textarea::placeholder {
     }
 
     .contact-title {
-        font-size: 50px; /* Reduce title size on mobile */
+        font-size: 50px; /* Reduce title size on smaller screens */
+    }
+
+    form {
+        max-width: 100%;
     }
 
     .send-btn {
@@ -157,6 +161,16 @@ input::placeholder, textarea::placeholder {
         font-size: 12px;
         text-align: center;
         width: 100%;
+        flex-direction: column; /* Stack info vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    .contact-info i {
+        margin: 10px;
     }
 }
-
