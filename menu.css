@@ -56,3 +56,31 @@ body {
     margin-right: 0;
     display: flex;
 }
+
+.heading-4.menu-name {
+    transform: translate(-50%);
+}
+
+.menu-name {
+    z-index: 10;
+    position: relative;
+    top: 1.1em;
+    left: 50%;
+}
+
+.heading-4 {
+    text-transform: uppercase;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.7em;
+    font-weight: 600;
+    line-height: 1.5;
+    display: block;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
