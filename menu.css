@@ -156,7 +156,18 @@ body {
 h3 {
     margin-top: 0;
     margin-bottom: 0;
-    
+
+}
+
+.sub-menu-list {
+    grid-column-gap: .8em;
+    grid-row-gap: .85em;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    display: grid;
 }
 
 
