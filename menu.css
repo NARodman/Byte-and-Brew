@@ -169,6 +169,21 @@ h3 {
     display: grid;
 }
 
+.sub-menu-item {
+    width: 26.7vw;
+    height: 26.7vw;
+    opacity: 1;
+    background-position: 50%;
+    background-size: cover;
+    border: 0 solid #fff;
+    border-radius: 1.9em;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    overflow: hidden;
+    
+}
+
 
 
 
