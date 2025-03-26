@@ -1,6 +1,5 @@
 body {
     color: #fff;
-    text-transform: uppercase;
     background-color: #232323;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.06vw;
@@ -169,6 +168,8 @@ h3 {
     padding-bottom: 1em;
     display: grid;
 }
+
+
 
 
 /*Media Queries*/
