@@ -84,3 +84,16 @@ h4 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.category-cover {
+    width: 15.6vw;
+    height: 14.2em;
+    max-width: 75vh;
+    cursor: pointer;
+    border: 4px solid rbga(255, 255, 255, 0.2);
+    border-radius: 6em;
+    margin-top: 1.8em;
+    padding-top: 0;
+    position: relative;
+    overflow: hidden;
+}
