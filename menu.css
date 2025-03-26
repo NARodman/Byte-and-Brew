@@ -68,7 +68,8 @@ body {
     max-width: 75vh;
     position: relative;
     overflow: hidden;
-    border: 4px solid #232323;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
     border-radius: 6em;
     margin-top: 1.8em;
     cursor: pointer;
@@ -99,7 +100,8 @@ body {
 }
 
 .category-cover:hover {
-    border: 4px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 30px #2ac6ff;
+    border: 4px solid #00aeef;
 }
 
 .category-cover:hover .category-image {
