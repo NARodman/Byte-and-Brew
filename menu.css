@@ -34,3 +34,13 @@ body {
     padding-right: 8.33vw;
     display: flex;
 }
+
+.categories-wrapper {
+    width: 83.4vw;
+    padding-top: 2em;
+}
+
+.categories-list {
+    justify-content: space-between;
+    display: flex;
+}
