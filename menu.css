@@ -132,7 +132,18 @@ body {
     margin-right: auto;
     display: flex;
     position: relative;
-    
+
+}
+
+.sub-menu-title-wrapper {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .6em;
+    padding-bottom: 0;
+    display: flex;
+    position: static;
+
 }
 
 
