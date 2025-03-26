@@ -44,3 +44,15 @@ body {
     justify-content: space-between;
     display: flex;
 }
+
+.category-item {
+    width: auto;
+    text-align: center;
+    cursor: auto;
+    border-radius: 4.8em;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+}
