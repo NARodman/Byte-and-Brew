@@ -146,6 +146,18 @@ body {
 
 }
 
+.heading-3 {
+    cursor: default;
+    font-size: 3.04em;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 
 /*Media Queries*/
 
