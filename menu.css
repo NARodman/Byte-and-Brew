@@ -128,37 +128,26 @@ body {
 
 .sub-menu-title-wrapper {
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: .6em;
-    padding-bottom: 0;
     display: flex;
-    position: static;
+    justify-content: center;
+    margin-bottom: 1em;
 
 }
 
 .heading-3 {
-    cursor: default;
     font-size: 3.04em;
     font-weight: 600;
     line-height: 1.5;
+    color: #fff;
 }
 
-h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
 
 .sub-menu-list {
-    grid-column-gap: .8em;
-    grid-row-gap: .85em;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    justify-content: space-between;
-    padding-bottom: 1em;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2em;
+    width: 100%;
+    padding-bottom: 1em;
 }
 
 .sub-menu-item {
