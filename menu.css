@@ -228,7 +228,33 @@ body {
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: opacity 0.3s ease;
 }
+
+.hover-gradient {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sub-menu-item:hover .hover-gradient {
+    opacity: 0.8;
+}
+
+.sub-menu-item:hover .ingredients {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 /*Media Queries*/
