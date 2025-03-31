@@ -116,22 +116,13 @@ body {
     background-color: #232323;
 }
 
-.section {
-    width: 100%;
-    height: auto;
-    background-color: #232323;
-    position: relative;
-}
-
 .container {
     width: 83.4vw;
-    height: 100%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
     position: relative;
+    margin: 0 auto;
 
 }
 
