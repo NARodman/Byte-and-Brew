@@ -255,11 +255,22 @@ h3 {
     width: 68%;
 }
 
+.item-name {
+    text-shadow: 1px 1px 11px #232323, 0 0 11px #232323;
+    font-size: .85em;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
 .price-holder {
     padding-top: 5px;
     display: flex;
 }
 
+.price, .currency-sign{
+    font-size: .74em;
+    font-weight: 600;
+}
 
 
 /*Media Queries*/
