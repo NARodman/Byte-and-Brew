@@ -1,36 +1,26 @@
-//Javacsript for Category Filtering 
+document.addEventListener("DOMContentLoaded", function () {
+    const categoryItems = document.querySelectorAll(".category-item");
+    const categorySections = document.querySelectorAll(".category-section");
 
-document.addEventListener("DOMContentLoaded", function() {
-    const categoryLinks = document.querySelectorAll(".category-item a");
-    const sections = document.querySelectorAll(".section.flex-with-padding");
+    // Initially hide all sections
+    categorySections.forEach((section) => section.classList.remove("active"));
 
-    categoryLinks.forEach((link) => {
-        link.addEventListener("click", function (e) {
+    // Handle category click
+    categoryItems.forEach((item) => {
+        item.addEventListener("click", function (e) {
             e.preventDefault();
+            const category = this.getAttribute("data-category");
 
-            // Get target section ID
-            const targetId = this.getAttribute("hred").substring(1);
-            const targetSection = document.getElementById(targetId);
-
-            //Hide all sections first 
-            sections.forEach((section) => {
-                section.style.display = "none";
+            // Hide all sections
+            categorySections.forEach((section) => {
+                section.classList.remove("active");
             });
 
-            //Show the clicked category section
-            targetSection.style.display = "flex";
-            targetSection.style.animation = "fadeIn 0.5s ease-in-out";
-
-            //Scroll to top after selection for smoothness
-            window.scrollTo({ top: 0, behavior: "smooth"});
+            // Show the selected section
+            const activeSection = document.querySelector(`.category-section[data-category="${category}"]`);
+            if (activeSection) {
+                activeSection.classList.add("active");
+            }
         });
     });
-
-
-    //Optional: Show the first section by default
-    sections.forEach((section) => {
-        section.style.display = "none";
-    });
-
-    document.getElementById("drinks").style.display = "flex"; // Show the first section by default
 });
