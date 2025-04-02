@@ -411,7 +411,9 @@
 /* Stars */
 .stars {
     color: #ff007f;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 5px #ff007f;
+    -webkit-text-stroke: 1px #ff007f;
 }
 
 /* Review Form */
@@ -420,9 +422,9 @@
 }
 
 #review-form {
-    background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #ff00ff;
-    box-shadow: 0 0 15px #ff00ff;
+    background: #232323;
+    border: 2px solid #00aeef;
+    box-shadow: 0 0 15px #00AEEF;
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
@@ -434,8 +436,9 @@
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #00ffea;
-    background: black;
+    border: none;
+    border-bottom: 2px solid #8000ff;
+    background: #232323;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -447,7 +450,7 @@
 }
 
 .star-rating label {
-    color: #ffd700;
+    color: #ffdd00;
     cursor: pointer;
 }
 
@@ -456,13 +459,15 @@
 }
 
 .star-rating input:checked ~ label {
-    color: #ffdd00;
+    color: #ff007f;
 }
 
 /* Neon Button */
 .neon-btn {
     background-color: #00aeef;
     border: none;
+    box-shadow: 0 0 15px #00AEEF;
+    font-family: 'Bebas Neue', sans-serif;
     color: white;
     padding: 12px 25px;
     border-radius: 5px;
@@ -472,6 +477,9 @@
 
 .neon-btn:hover {
     background-color: #8000ff;
+    box-shadow: 0 0 15px #8000ff;
+    color: white;
+
 }
 
 .neon-text{

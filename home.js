@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //Reviews 
 
 let reviewIndex = 0;
+
 document.getElementById('review-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -77,5 +78,21 @@ document.getElementById('review-form').addEventListener('submit', function(e) {
     document.querySelector('input[name="rating"]:checked').checked = false;
 });
 
+// Load existing reviews on page load
+window.onload = function() {
+    let savedReviews = JSON.parse(localStorage.getItem('reviews')) || [];
 
+    savedReviews.forEach((review, index) => {
+        let starRating = "★".repeat(review.rating);
+        let newReview = document.createElement('div');
+        newReview.classList.add('review-card');
+        newReview.innerHTML = `
+            <p>"${review.reviewText}"</p>
+            <p class="author">- ${review.name}</p>
+            <div class="stars">${starRating}</div>
+        `;
 
+        let targetRow = index % 2 === 0 ? 'review-row-1' : 'review-row-2';
+        document.getElementById(targetRow).appendChild(newReview);
+    });
+};
