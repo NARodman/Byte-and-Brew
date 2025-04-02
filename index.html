@@ -114,10 +114,11 @@
         </div>
     </section>
 
-    <!-- Reviews Section -->
+   <!-- Reviews Section -->
 <section id="reviews" class="container-fluid py-5">
     <h2 class="text-center text-white neon-text">What Our Customers Say</h2>
     <div class="reviews-container">
+        <!-- Sliding Review Rows -->
         <div class="review-row" id="review-row-1">
             <!-- Review 1 -->
             <div class="review-card">
@@ -155,16 +156,27 @@
         </div>
     </div>
 
+    <!-- Review Form -->
     <div class="review-form-container">
         <h3 class="text-center text-white neon-text">Add Your Review</h3>
         <form id="review-form" class="text-center">
             <textarea id="review-text" placeholder="Write your review here..." rows="4"></textarea><br>
+            <div class="star-rating">
+                <label for="star-1">☆</label>
+                <label for="star-2">☆</label>
+                <label for="star-3">☆</label>
+                <label for="star-4">☆</label>
+                <label for="star-5">☆</label>
+                <input type="radio" name="rating" id="star-1" value="1">
+                <input type="radio" name="rating" id="star-2" value="2">
+                <input type="radio" name="rating" id="star-3" value="3">
+                <input type="radio" name="rating" id="star-4" value="4">
+                <input type="radio" name="rating" id="star-5" value="5">
+            </div>
             <button type="button" id="submit-review" class="btn neon-btn">Submit Review</button>
         </form>
     </div>
 </section>
-
-
 
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
