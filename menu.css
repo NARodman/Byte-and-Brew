@@ -212,7 +212,8 @@ body {
 }
 
 .ingredients {
-    font-size: 0.85em;
+    font-size: 0.75em;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.4;
     margin-top: 45px;
     text-align: center;
