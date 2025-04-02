@@ -479,10 +479,12 @@
     font-family: 'Bebas Neue', sans-serif;
     background: linear-gradient(to right, #00aeef, #8000ff, #ff007f);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     text-shadow: 0px 0px 15px rgba(0, 174, 239, 0.9);
     animation: pulseGlow 2s infinite alternate;
-    text-stroke: 1px rgba(255, 255, 255, 0.8);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
+    
 }
 
 /* Smooth Slide Animation */
