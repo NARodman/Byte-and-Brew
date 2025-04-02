@@ -329,6 +329,22 @@
     left: 100%;
 }
 
+/* Reviews section Styles */
+
+.neon-text {
+    background: linear-gradient(to right, #00aeef, #8000ff, #ff007f);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px 10px rgba(0, 174, 239, 0.7), 0px 0px 20px rgba(255, 0, 127, 1);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+
+#reviews {
+    background-color: #232323;
+    padding: 60px 10px;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     #services {
