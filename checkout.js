@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkoutModal = document.getElementById("checkout-modal");
     const confirmationModal = document.getElementById("confirmation-modal");
     const checkoutForm = document.getElementById("checkout-form");
+    const cartCount = document.getElementById("cart-count");
 
     // 1. Add to Cart
     document.querySelectorAll(".add-to-cart-btn").forEach(button => {
@@ -68,6 +69,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateCart();
             });
         });
+        cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.style.display = cart.length > 0 ? "inline-block" : "none";
+
     }
 
     // 4. Show Cart Modal
