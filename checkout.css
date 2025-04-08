@@ -1,8 +1,8 @@
 /* General Page Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f5f2;
-    color: #2b2b2b;
+    background-color: #232323;
+    color: #fff;
     margin: 0;
     padding: 0 1.5rem;
 }
@@ -11,8 +11,9 @@ h1.contact-title {
     text-align: center;
     font-size: 3rem;
     margin-top: 2rem;
-    color: #4a2c2a;
+    color: #00aeef;
     animation: fadeInDown 1s ease;
+    
 }
 
 .order-section {
@@ -22,10 +23,11 @@ h1.contact-title {
 
 .order-section h2 {
     font-size: 2rem;
-    color: #7b4b47;
-    border-bottom: 2px solid #e6d4c3;
+    color: #fff;
+    border-bottom: 2px solid #fff;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
+
 }
 
 .order-list {
@@ -36,10 +38,11 @@ h1.contact-title {
 
 /* Product Card Styling */
 .product-card {
-    background: #fff;
+    background: #232323;
     border-radius: 20px;
     padding: 1rem;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 12px rgba(0, 174, 239, 0.9), 0 0 2px #00aeef;
+    border: 2px solid rgba(0, 174, 239, 0.8);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -55,12 +58,12 @@ h1.contact-title {
 
 .product-price {
     font-size: 1.1rem;
-    color: #a87462;
+    color: #8000ff;
     margin: 0.5rem 0;
 }
 
 .add-to-cart-btn {
-    background-color: #4a2c2a;
+    background-color: #ff007f;
     color: #fff;
     border: none;
     padding: 0.6rem 1rem;
@@ -71,7 +74,7 @@ h1.contact-title {
 }
 
 .add-to-cart-btn:hover {
-    background-color: #7b4b47;
+    background-color: #ab0658;
 }
 
 /* Cart Button */
@@ -79,7 +82,7 @@ h1.contact-title {
     position: fixed;
     top: 20px;
     right: 20px;
-    background-color: #4a2c2a;
+    background-color: #00aeef;
     color: white;
     border: none;
     border-radius: 50px;
@@ -93,6 +96,7 @@ h1.contact-title {
 
 #view-cart:hover {
     transform: scale(1.05);
+    background-color: #094e71;
 }
 
 /* Modals (Cart, Checkout, Confirmation) */
@@ -114,6 +118,7 @@ h1.contact-title {
 
 .modal-content {
     background: white;
+    color: black;
     border-radius: 20px;
     padding: 2rem;
     max-width: 500px;
@@ -147,7 +152,7 @@ h1.contact-title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid black;
     padding-bottom: 0.5rem;
     font-weight: 500;
 }
@@ -161,7 +166,7 @@ h1.contact-title {
 #checkout-btn, 
 #checkout-form button,
 .back-home-btn {
-    background-color: #7b4b47;
+    background-color: #ff007f;
     color: white;
     border: none;
     padding: 0.75rem 1.25rem;
@@ -176,7 +181,7 @@ h1.contact-title {
 #checkout-btn:hover, 
 #checkout-form button:hover,
 .back-home-btn:hover {
-    background-color: #a87462;
+    background-color: #ab0658;
 }
 
 /* Checkout Form */
@@ -185,20 +190,23 @@ h1.contact-title {
     width: 100%;
     margin-bottom: 1rem;
     padding: 0.6rem;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 10px;
     font-size: 1rem;
 }
 
 /* Confirmation */
 #confirmation-modal h2 {
-    color: #4a2c2a;
+    color: black;
 }
 
 .back-home-btn {
     text-decoration: none;
     text-align: center;
     display: block;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 /* Animations */
