@@ -337,6 +337,7 @@
     background-color: #232323;
     padding: 50px 0;
     text-align: center;
+
 }
 
 .reviews-container {
@@ -497,6 +498,12 @@
 
 /* Footer Styles */
 
+footer {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #232323;
+  }
+
 .footer-section {
     background-color: #232323;
     font-family: 'Poppins', sans-serif;
@@ -539,6 +546,12 @@
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    border: 2px solid #00AEEF; /* neon aqua border */
+  box-shadow: 0 0 15px #00AEEF;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 90%;
+  transition: all 0.3s ease-in-out;
 }
 
 .map-responsive iframe {
