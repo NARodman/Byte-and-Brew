@@ -495,6 +495,62 @@
     
 }
 
+/* Footer Styles */
+
+.footer-section {
+    background-color: #232323;
+    font-family: 'Poppins', sans-serif;
+    color: #c3f0ff;
+    border-top: 3px solid #00aeef;
+}
+
+.footer-logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: #00aeef;
+}
+
+.footer-sub {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #a0a0a0;
+}
+
+.footer-heading {
+    color: #8000ff;
+    font-weight: 600;
+    border-bottom: 2px solid #8000ff;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.footer-link {
+    color: #00aeef;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: #ff007f;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
 /* Smooth Slide Animation */
 @keyframes slideIn {
     0% {
