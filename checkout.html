@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <h1 class="contact-title">Order Now</h1>
+
+    <!-- Drinks Section -->
+    <section class="order-section">
+        <h2>Drinks</h2>
+        <div class="order-list">
+            <div class="product-card">
+                <p class="product-name">Iced Coffee</p>
+                <p class="product-price">$3.50</p>
+                <button class="add-to-cart-btn" data-name="Iced Coffee" data-price="3.5">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <p class="product-name">Hot Tea</p>
+                <p class="product-price">$2.00</p>
+                <button class="add-to-cart-btn" data-name="Hot Tea" data-price="2.0">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breakfast Section -->
+    <section class="order-section">
+        <h2>Breakfast</h2>
+        <div class="order-list">
+            <div class="product-card">
+                <p class="product-name">Bacon Egg & Cheese</p>
+                <p class="product-price">$6.50</p>
+                <button class="add-to-cart-btn" data-name="Bacon Egg & Cheese" data-price="6.5">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <p class="product-name">Avocado Toast</p>
+                <p class="product-price">$5.00</p>
+                <button class="add-to-cart-btn" data-name="Avocado Toast" data-price="5.0">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lunch Section -->
+    <section class="order-section">
+        <h2>Lunch</h2>
+        <div class="order-list">
+            <div class="product-card">
+                <p class="product-name">Grilled Chicken Wrap</p>
+                <p class="product-price">$8.00</p>
+                <button class="add-to-cart-btn" data-name="Grilled Chicken Wrap" data-price="8.0">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <p class="product-name">Vegan Salad Bowl</p>
+                <p class="product-price">$7.50</p>
+                <button class="add-to-cart-btn" data-name="Vegan Salad Bowl" data-price="7.5">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sides Section -->
+    <section class="order-section">
+        <h2>Sides</h2>
+        <div class="order-list">
+            <div class="product-card">
+                <p class="product-name">Fruit Cup</p>
+                <p class="product-price">$3.00</p>
+                <button class="add-to-cart-btn" data-name="Fruit Cup" data-price="3.0">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <p class="product-name">Hash Browns</p>
+                <p class="product-price">$2.50</p>
+                <button class="add-to-cart-btn" data-name="Hash Browns" data-price="2.5">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pastries Section -->
+    <section class="order-section">
+        <h2>Pastries</h2>
+        <div class="order-list">
+            <div class="product-card">
+                <p class="product-name">Chocolate Croissant</p>
+                <p class="product-price">$4.00</p>
+                <button class="add-to-cart-btn" data-name="Chocolate Croissant" data-price="4.0">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <p class="product-name">Blueberry Muffin</p>
+                <p class="product-price">$3.25</p>
+                <button class="add-to-cart-btn" data-name="Blueberry Muffin" data-price="3.25">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <button id="view-cart">🛒 View Cart</button>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total"></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Expiry" required>
+                <input type="text" placeholder="CVC" required>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Thank You!</h2>
+            <p>Your order has been received.</p>
+            <a href="index.html" class="back-home-btn">Back to Homepage</a>
+        </div>
+    </div>
+
+
+
+    <script defer src="checkout.js"></script>
+</body>
+</html>
