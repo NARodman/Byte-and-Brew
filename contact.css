@@ -194,3 +194,90 @@ input::placeholder, textarea::placeholder {
     border-radius: 10px;
     filter: drop-shadow(0 0 10px #00aeef); /* subtle neon glow */
 }
+
+/* Media Queries */
+
+/* Tablets and under */
+@media (max-width: 768px) {
+    .contact-card {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+
+    .image-side {
+        height: 250px;
+        flex: none;
+        mask-image: none;
+    }
+
+    .form-side {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact-title {
+        font-size: 50px;
+    }
+
+    form {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .send-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        margin: 5px 0;
+        justify-content: center;
+    }
+
+    .contact-info i {
+        margin: 10px;
+    }
+
+    .contact-iframe {
+        width: 95%;
+    }
+}
+
+/* Phones and small devices */
+@media (max-width: 480px) {
+    .contact-title {
+        font-size: 36px;
+    }
+
+    .send-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-info i {
+        font-size: 16px;
+    }
+
+    .contact-card {
+        width: 95%;
+        margin-top: 8vh;
+    }
+
+    .contact-iframe iframe {
+        height: 250px;
+    }
+}
