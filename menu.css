@@ -9,6 +9,37 @@ body {
 
 }
 
+/* Order Now Button Styling */
+.order-now-container {
+    position: absolute;
+    bottom: 150px; /* Adjust as needed to position it above the menu */
+    left: 80%;
+    transform: translateX(-50%);
+    z-index: 100; /* Ensures the button stays on top of other elements */
+    display: flex;
+    justify-content: center;
+}
+
+.order-now-btn {
+    background-color: #ff007f;
+    color: white;
+    border: 2px solid #ff007f;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 0px 12px rgba(255, 0, 127, 0.9), 0 0 2px #ff007f;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.order-now-btn:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(255, 0, 127, 1), 0 0 4px #ff007f;
+    scale: 1.25;
+}
 
 
 .section.full-height {
