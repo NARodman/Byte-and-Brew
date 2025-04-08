@@ -94,6 +94,34 @@ h1.contact-title {
     transition: transform 0.3s ease;
 }
 
+#back-to-home {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #00aeef;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+#back-to-home a {
+    color: white;
+    text-decoration: none;
+}
+
+#back-to-home:hover, 
+a:hover {
+    transform: scale(1.05);
+    background-color: #094e71;
+    color: white;
+}
+
 #view-cart:hover {
     transform: scale(1.05);
     background-color: #094e71;
