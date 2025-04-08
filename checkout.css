@@ -1,0 +1,212 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #232323;
+    color: white;
+    transition: background 0.5s ease;
+  }
+  
+  h1, h2 {
+    color: #00aeef;
+    text-shadow: 0 0 8px #00aeef88;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .menu-section {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 16px;
+    background-color: #2c2c2c;
+    box-shadow: 0 0 15px #00aeef33;
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+  }
+  
+  .menu-section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 25px #00aeef55;
+  }
+  
+  .menu-section h2 {
+    color: #8000ff;
+    text-shadow: 0 0 6px #8000ff88;
+    border-bottom: 2px solid #8000ff44;
+    padding-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #ff007f33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease, box-shadow 0.4s ease;
+  }
+  
+  li:hover {
+    background-color: #3a3a3a;
+    box-shadow: 0 0 15px #ff007f66;
+  }
+  
+  button {
+    background-color: #8000ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #8000ff55;
+  }
+  
+  button:hover {
+    background-color: #00aeef;
+    box-shadow: 0 0 15px #00aeefaa;
+  }
+  
+  /* Cart Button */
+  #view-cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #00aeef;
+    color: #fff;
+    border-radius: 50px;
+    padding: 14px 20px;
+    z-index: 999;
+    box-shadow: 0 0 12px #00aeef99;
+  }
+  
+  .cart-bounce {
+    animation: bounceCart 0.5s ease;
+  }
+  
+  @keyframes bounceCart {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Cart Modal */
+  .modal, #checkout-modal, #confirmation-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(35, 35, 35, 0.95);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    transition: opacity 0.4s ease;
+  }
+  
+  .modal.show, #checkout-modal.show, #confirmation-modal.show {
+    display: flex;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .modal-content {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px #ff007f66;
+  }
+  
+  #cart-items li {
+    background-color: #444;
+    box-shadow: 0 0 10px #8000ff44;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #cart-total {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: right;
+    color: #00aeef;
+    text-shadow: 0 0 5px #00aeefaa;
+  }
+  
+  /* Close Button */
+  #close-cart {
+    margin-top: 20px;
+    background-color: #ff007f;
+    box-shadow: 0 0 10px #ff007f99;
+  }
+  
+  .remove-btn {
+    background-color: transparent;
+    color: #ff007f;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    color: white;
+    text-shadow: 0 0 10px #ff007f;
+  }
+  
+  /* Checkout Form */
+  form label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    box-shadow: inset 0 0 5px #8000ff55;
+  }
+  
+  /* Confirmation */
+  #confirmation-modal .modal-content {
+    text-align: center;
+    box-shadow: 0 0 25px #00aeef66;
+  }
+  
+  #confirmation-modal h2 {
+    color: #00aeef;
+    text-shadow: 0 0 6px #00aeefaa;
+  }
+  
+  #confirmation-modal p {
+    color: #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .back-home-btn {
+    background-color: #ff007f;
+    box-shadow: 0 0 12px #ff007faa;
+  }
+  
