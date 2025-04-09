@@ -44,23 +44,7 @@ Clean login interface (for visuals only — no account creation or authenticatio
 * No backend/server integration
 * All functionality is purely frontend and built to simulate a fully functional café site for educational purposes.
 
-# 📁 File Structure
 
-```byte-and-brew/
-├── index.html
-├── menu.html
-├── order.html
-├── reservation.html
-├── contact.html
-├── login.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── script.js
-├── images/
-│   └── [hero banners, icons, menu images]
-├── README.md
-```
 # 🎓 About the Project
 
 This website was created by Nina Lanier for a Web Programming course at Virginia State University. It was built to demonstrate front-end design skills, including layout design, animations, responsive styling, and basic form interactivity using HTML, CSS, and JavaScript.
