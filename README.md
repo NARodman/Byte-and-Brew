@@ -49,7 +49,7 @@ Clean login interface (for visuals only — no account creation or authenticatio
 
 This website was created by Nina Lanier for a Web Programming course at Virginia State University. It was built to demonstrate front-end design skills, including layout design, animations, responsive styling, and basic form interactivity using HTML, CSS, and JavaScript.
 
-# 🛠️ Tools Used
+## 🛠️ Tools Used
 
 - HTML5
 - CSS3 (with animations & transitions)
