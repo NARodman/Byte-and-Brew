@@ -8,36 +8,36 @@ Byte & Brew blends the vibes of a coffee shop, coworking space, and arcade under
 
 # 🖥️ Features
 
-# 🎯 Hero Section
+## 🎯 Hero Section
 * Eye-catching image slideshow (rotating banners of café vibes)
 * Informative info cards about café highlights (workspaces, arcade, coffee bar, etc.)
 * Sliding customer reviews section
 * Interactive review submission form (form only, no data stored)
 
-# 📋 Menu Page
+## 📋 Menu Page
 * Fully designed menu categorized into Drinks, Breakfast, Lunch, Sides, and Pastries
 * Filtering system to sort by meal type
 
-# 🛒 Order Page
+## 🛒 Order Page
 * Simulated cart functionality
 * Basic checkout page to review order (no payment processing)
 
-# 📆 Reservations
+## 📆 Reservations
 * Simple reservation form with inputs for time, date, and guest number
 * Confirmation screen upon submission
 
-# 📞 Contact Page
+## 📞 Contact Page
 * Standard contact form (name, email, message)
 * Confirmation message after sending
 
-# 🔐 Login Page
+## 🔐 Login Page
 Clean login interface (for visuals only — no account creation or authentication)
 
-# 📍 Footer
+## 📍 Footer
 * Google Maps iframe embed showing the fictional location of Byte & Brew
 * 🚫 What This Project Does Not Include
 
-# 
+## 
 * No databases or data storage
 * No real-time authentication or login sessions
 * No payment processing
