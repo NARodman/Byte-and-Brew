@@ -96,3 +96,4 @@ window.onload = function() {
         document.getElementById(targetRow).appendChild(newReview);
     });
 };
+
