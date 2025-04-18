@@ -109,6 +109,22 @@ document.addEventListener("DOMContentLoaded", () => {
         checkoutForm.reset();
     });
 
+    const closeCheckoutBtn = document.getElementById("close-checkout");
+    const backToCartBtn = document.getElementById("back-to-cart");
+
+    // Close checkout modal without clearing cart
+    closeCheckoutBtn.addEventListener("click", () => {
+        checkoutModal.classList.remove("show");
+    });
+
+    // Back to cart from checkout
+    backToCartBtn.addEventListener("click", () => {
+        checkoutModal.classList.remove("show");
+        setTimeout(() => {
+            cartModal.classList.add("show");
+        }, 300);
+    });
+
     // 7. Back to Homepage
     document.querySelector(".back-home-btn").addEventListener("click", () => {
         confirmationModal.classList.remove("show");

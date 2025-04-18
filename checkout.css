@@ -77,6 +77,19 @@ h1.contact-title {
     background-color: #ab0658;
 }
 
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Cart Button */
 #view-cart {
     position: fixed;
